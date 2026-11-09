@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunaPic</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="titlebar">
+        <div class="drag-region">LunaPic</div>
+        <div class="window-controls">
+            <button id="btn-minimize">_</button>
+            <button id="btn-maximize">□</button>
+            <button id="btn-close">×</button>
+        </div>
+    </div>
+
+    <div id="meta-overlay" class="hidden">
+        <div><span class="meta-label">Date:</span> <span id="meta-date">...</span></div>
+        <div><span class="meta-label">Size:</span> <span id="meta-size">...</span></div>
+        <div><span class="meta-label">Res:</span> <span id="meta-res">...</span></div>
+        <div><span class="meta-label">Geo:</span> <span id="meta-loc">...</span></div>
+        <div><span class="meta-label">Path:</span> <span id="meta-path">...</span></div>
+    </div>
+
+    <div id="canvas-container">
+        <img id="viewer-img" src="" style="display: none;">
+        <div id="empty-state">Drag & Drop an image here, or Click to Browse</div>
+    </div>
+
+    <div id="hud" class="hidden">
+        <span id="hud-filename">image.png</span>
+        <span id="hud-counter">1 / 1</span>
+        <span id="hud-zoom">100%</span>
+    </div>
+
+    <script src="./js/renderer.js"></script>
+</body>
+</html>
